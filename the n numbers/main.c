@@ -3,24 +3,13 @@
 
 int main()
 {
-    int n, n1;
-    printf("Please, enter the positive number equal to quantity of numbers\n");
-    while (1)
-    {
-        scanf("%d",&n);
-        if(n<=0)
-        {
-            printf("One more try, morran\n");
-            continue;
-        }
-        if(n>0)
-        {
-            break;
-        }
-    }
-    scanf("%d",&n);
-    printf("Please, enter the quantity of numbers equal early to the entered number\n");
-    scanf("%d",&n1);
+    int x,p;
+    printf("enter number: ");
+    scanf("%d", &x);
+    printf("enter degree: ");
+    scanf("%d", &p);
+    printf("%d\n",(int) pow(x,p));
 
     return 0;
+
 }
