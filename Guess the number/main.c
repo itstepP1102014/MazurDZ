@@ -8,7 +8,9 @@ int main()
 
     int player, comp=rand()%100, step=1;
     char answer;
-    do
+    printf("Would you like to play?:\n""y/n\n",answer);
+    scanf("%c",&answer);
+    if('y'==answer)
     {
         printf("Type your number 0 to 99:\n",player);
         scanf("%d",&player);
@@ -21,51 +23,19 @@ int main()
         {
             printf("Guess what? It's MORE\n");
         }
-        else
+        if(player<comp)
         {
             printf("Guess what? It's LESS\n");
         }
-
-    }
-    if(player!=comp);
-    {
-        printf("Great! You did it in %d steps!",step);
-        printf("Would you like to play one more time?\n""y/n\n");
-        scanf("%c",answer);
-    }
-    if('y'==answer)
-    {
-        do
+        if(player!=comp)
         {
-            printf("Type your number 0 to 99:\n",player);
-            scanf("%d",&player);
-            if(player==comp)
-            {
-                break;
-            }
-            step += 1;
-            if(player>comp)
-            {
-                printf("Guess what? It's MORE\n");
-            }
-            else
-            {
-                printf("Guess what? It's LESS\n");
-            }
-
+            printf("Great! You did it in %d steps!\n",step);
         }
-        if(player!=comp);
-        {
-            printf("Great! You did it in %d steps!",step);
-            printf("Would you like to play one more time?\n""y/n\n");
-            scanf("%c",answer);
-        }
-        if('y'==answer)
-        }
-    else
+    }
+    else if
     {
         break;
     }
 
-    return 0;
-}
+        return 0;
+    }
