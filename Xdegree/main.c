@@ -14,7 +14,7 @@ int main()
         x=n;
         q=d;
         printf("%d in degree %lf is %lf\n",n,d,x);
-        //help allmighty!
+        //
     }
     else
     {
