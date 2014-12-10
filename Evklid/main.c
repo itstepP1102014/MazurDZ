@@ -12,7 +12,7 @@ int main()
     {
         if(a>0&&b>=0)
         {
-           a/b=r;
+           a/b=r;// Error in here, WTF it want of me?
            a=b;
            b=r;
            ++i
