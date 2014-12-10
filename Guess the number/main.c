@@ -9,7 +9,7 @@ int main()
     int player, comp=rand()%99+1, step=1;
     char answer;
     printf("Would you like to play?:\n""y/n\n",answer);
-    scanf("%c",&answer);
+    scanf(" %c",&answer);
     if('y'==answer)
     {
         printf("Type your number 0 to 99:\n",player);
