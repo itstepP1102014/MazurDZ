@@ -3,13 +3,10 @@
 
 int main()
 {
-    printf("And The Moon And The Stars And The World\n");
-    printf("by Charles Bukowski\n");
-    printf("Long walks at night\n");
-    printf("that’s what good for the soul:\n");
-    printf("peeking into windows\n");
-    printf("watching tired housewives\n");
-    printf("trying to fight off\n");
-    printf("their beer-maddened husbands.\n");
+    int a;
+    for(int i=3; i<27; i+=i%3)
+    {
+        printf("%d\n",i);
+    }
     return 0;
 }
