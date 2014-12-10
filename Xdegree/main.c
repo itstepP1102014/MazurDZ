@@ -3,19 +3,27 @@
 
 int main()
 {
-    int i, r, n;//r - result, X - helpful number, n - user's number, d - user's degree//
-    unsigned X=1, d;
+    int n, d, q;//n - number, d - degree, q - degree's pointer//
+    double x;
     printf("Type your number:\n",n);
     scanf("%d",&n);
     printf("Type number's degree:\n",d);
-    scanf("%u",&d);
-    for(i=0;i<=d||i==d;++i)// It seems i stuck in here(
+    scanf("%lf",&d);
+    if(d>=0)
     {
-        //printf("%d",r);
-        r=n*X;
-        X=r;
+        x=n;
+        q=d;
+
+        printf("%d in degree %lf is %lf\n",n,d,x);
     }
-    printf("%d in degree %u is %u\n",n,d,X);
+    else
+    {
+        x=1.0/n;
+        q=-d;
+        printf("%d in degree %lf is %lf\n",n,d,x);
+    }
+
+
 
     return 0;
 }
