@@ -6,7 +6,7 @@ int main()
 {
     srand(time(NULL));
 
-    int player, comp=rand()%100, step=1;
+    int player, comp=rand()%99+1, step=1;
     char answer;
     printf("Would you like to play?:\n""y/n\n",answer);
     scanf("%c",&answer);
