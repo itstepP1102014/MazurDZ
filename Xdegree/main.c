@@ -13,14 +13,15 @@ int main()
     {
         x=n;
         q=d;
-
         printf("%d in degree %lf is %lf\n",n,d,x);
+        //
     }
     else
     {
         x=1.0/n;
         q=-d;
         printf("%d in degree %lf is %lf\n",n,d,x);
+        // stuck in here
     }
 
 
