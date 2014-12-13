@@ -14,17 +14,18 @@ int main()
 		if (a > b)
 		{
 			a=a%b;
-			r = a;
+			r = b;
 		}
 		else
 		{
 			b=b%a;
-			r = b;
+			r = a;
 		}
 	}
 
 	printf("GCD of 'a' and 'b' is %d", r);
-	scanf("%d", &a);
+
+	getc(stdin);
 	getc(stdin);
 
 	return 0;
