@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -24,9 +23,6 @@ int main()
 	}
 
 	printf("GCD of 'a' and 'b' is %d", r);
-
-	getc(stdin);
-	getc(stdin);
 
 	return 0;
 }
