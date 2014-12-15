@@ -1,23 +1,31 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 int main()
 {
-    unsigned int a, b, r=a/b, i;
-    printf("Type 1st number:\n",a);
-    scanf("%d",&a);
-    printf("Type 2nd number:\n",b);
-    scanf("%d",&b);
-    do
-    {
-        if(a>0&&b>=0)
-        {
-           a/b=r;// Error in here, WTF it want of me?
-           a=b;
-           b=r;
-           ++i
+	int a, b, r;
+	printf("Type 'a':\n");
+	scanf("%d", &a);
+	printf("Type 'b':\n");
+	scanf("%d", &b);
+	while ((a != 0) && (b != 0))
+	{
+		if (a > b)
+		{
+			a=a%b;
+			r = b;
+		}
+		else
+		{
+			b=b%a;
+			r = a;
+		}
+	}
 
-        }
+	printf("GCD of 'a' and 'b' is %d", r);
+
+	return 0;
+}
         else
         {
             break;
