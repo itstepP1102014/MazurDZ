@@ -4,19 +4,22 @@
 int main()
 {
     int n;
-    printf("Type 'n' to check it. It should be more or equal '2':\n");
-    scanf("%d", &n);
     do
     {
+        printf("Type 'n' to check it.\n");
         printf("It should be MORE or EQUAL '2'");
+        scanf("%d", &n);
     }
     while(n<2);
-    int i=1, d=0; // d - is denominator//
-    for(int i, d; d<=2, i<=n, ++i )
+    int d=0; // d - is denominator//
+    for(int i=2; i<=n; ++i )
     {
         if(n%i==0)
         {
             ++d;
+        }
+        if(d==2)
+        {
             printf("It's simple number\n");
         }
         else
