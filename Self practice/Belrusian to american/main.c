@@ -24,7 +24,7 @@ int main()
     }
     while(points == 30 || points < 49)
     {
-        printf("D");
+        printf("D");//
         return 0;
     }
     while(points == 1 || points < 29)
