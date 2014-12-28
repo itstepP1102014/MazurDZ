@@ -7,30 +7,26 @@ int main()
     printf("Your points in belrusian system:\n");
     scanf("%d", &points);
 
-    while(points == 85 || points < 100)
+    if(points >= 85 && points < 100)
     {
         printf("A");
-        return 0;
     }
-    while(points == 70 || points < 84)
+    if(points >= 70 && points < 84)
     {
         printf("B");
-        return 0;
     }
-    while(points == 50 || points < 69)
+    if(points >= 50 && points < 69)
     {
         printf("C");
-        return 0;
     }
-    while(points == 30 || points < 49)
+    if(points >= 30 && points < 49)
     {
         printf("D");
-        return 0;
     }
-    while(points == 1 || points < 29)
+    if(points >= 0 && points < 29)
     {
         printf("F");
-        return 0;
     }
+    return 0;
 
 }
