@@ -7,31 +7,27 @@ int main()
     printf("Your points in belrusian system:\n");
     scanf("%d", &points);
 
-    if(points >= 85 && points < 100)
+    if(points > 85 && points <= 100)
     {
         printf("A");
     }
-    if(points >= 70 && points < 84)
+    if(points > 70 && points <= 85)
     {
         printf("B");
     }
-    if(points >= 50 && points < 69)
+    if(points > 50 && points <= 70)
     {
         printf("C");
     }
-    if(points >= 30 && points < 49)
+    if(points > 30 && points <= 50)
     {
-<<<<<<< HEAD
         printf("D");
-=======
-        printf("D");//
-        return 0;
->>>>>>> d03b5092f7ce0406e93343f9ddbc50e374284ad8
     }
-    if(points >= 0 && points < 29)
+    if(points <= 30)
     {
         printf("F");
     }
+
     return 0;
 
 }
