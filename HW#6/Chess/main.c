@@ -8,15 +8,18 @@ int main()
     scanf("%d%d", &m, &n);
     for(int i = 1; i < m; ++i)
     {
-        for(int j = 1; j < n; ++j)
+        if (i % 2)
         {
-            if(i%2 || j%2)
+            for (int k = 1; k <= n; ++k)
             {
-                printf("*");
+                printf("%s", k % 2? "*" : " ");
             }
-            else
+        }
+        else
+        {
+            for (int k = 1; k <= n; ++k)
             {
-                printf(" ");
+                printf("%s", k % 2? " " : "*");
             }
         }
         printf("\n");
