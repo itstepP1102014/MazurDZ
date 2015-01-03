@@ -73,13 +73,8 @@ int main()
                     system("cls");
                     printf("You're Paul Anderson. That is it.\n");
                     break;
-                default:
-                    system("cls");
-                    printf("ERROR!\n");
                 }
                 break;
-            default:
-                printf("ERROR!\n");
             }
             break;
         case 'n':
@@ -87,9 +82,6 @@ int main()
             printf("Maybe you're right and it's easier to live simple stressless life\n");
             printf("See you next life, Neo...\n");
             break;
-        default:
-            system("cls");
-            printf("ERROR!\n");
         }
         break;
     case 'n':
