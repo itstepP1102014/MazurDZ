@@ -24,83 +24,82 @@ int main()
     switch(answer)
     {
     case 'y':
+        system("cls");
         for(int a = 0; a < 1000; ++a)
         {
             printf("Follow the white rabbit...\r");
         }
         system("cls");
-        for(int b = 0; b < 2000; ++b)
-        {
-            printf("Trinity told you everything. Now it's up to you.\r");
-        }
-        system("cls");
-        printf("Suddenly you've got FedEx delivery. Are you going to open it?\n""y/n\n");
+        printf("Suddenly you found out yourself back in the office with th FedEx delivery.\n");
+        printf("There is a cellphone inside.\n");
+        printf("Suspiciously familiar voice telling you're in great danger.\n");
+        printf("Will you follow it's advices?\n");
+        printf("y/n\n");
         scanf("%c", &answer);
         switch(answer)
         {
         case 'y':
             system("cls");
-            printf("You found a cellphone. It's calling. The voice out of it giving you advices. Will you follow them?\n""y/n\n");
+            printf("Crawl through the hall straight to the office\n");
+            printf("There is a hanging stage behind the window\n");
+            printf("Step by step you moving to the stage\n");
+            printf("You're too scared. Will you make the final step on the stage?\ny/n\n");
             scanf("%c", &answer);
             switch(answer)
             {
             case 'y':
                 system("cls");
-                printf("You have to crawl through the hall straight to the office.\n");
-                printf("Now you're staying in front of the door.\n");
-                printf("You're very curious about your followers\n");
-                printf("1\tCheck the followers\n2\tOpen the door\n");
-                int input;
-                scanf("%d", &input);
-                switch(input)
-                {
-                case 1:
-                    system("cls");
-                    printf("Strange people took you to their office, and asked about your secret life of hacker, about Morpheus.\n");
-                    printf("They grabbed you and did something, then you fall asleep.\n");
-                    printf("You waked up back in your apartments.\n");
-                    printf("Strange figure in the street seems to be watching you. Looks like you know her...\n");
-                    printf("And you're going to check it...\n");
-                    break;
-                case 2:
-                    system("cls");
-                    printf("You are in the office.\n");
-                    printf("The voice told you to get into the window.\n");
-                    break;
-                default:
-                    system("cls");
-                    printf("Strange people took you to their office, and asked about your secret life of hacker, about Morpheus.\n");
-                    printf("They grabbed you and did something, then you fall asleep.\n");
-                    printf("You waked up back in your apartments.\n");
-                    printf("Strange figure in the street seems to be watching you. Looks like you know her...\n");
-                    printf("But you totally don't want to check it...\n");
-                }
+                printf("Small step for man , a great step for mankind\n");
+                printf("Your journey just started...");
                 break;
             case 'n':
                 system("cls");
-                printf("Strange people took you to their office, and asked about your secret life of hacker, about Morpheus.\n");
-                printf("They grabbed you and did something, then you fall asleep.\n");
-                printf("You waked up back in your apartments.\n");
-                printf("Strange figure in the street seems to be watching you. Looks like you know her...\n");
-                printf("But you totally don't want to check it...\n");
+                printf("Strange people took you to the secret floor.\n");
+                printf("They asked about Morpheus and your hacking life.\n");
+                printf("They grabbed you and implanted under the skin mechanical arthropod.\n");
+                printf("Next morning the strange feeling of surveillance followed you.\n");
+                printf("In the evening the stranger took you to the hood apartments\n");
+                printf("Finally, you met the Morpheus.\n");
+                printf("After the story of the original world and your destination he giving you two pils: red and blue.\n");
+                printf("red/blue\n");
+                scanf("%c", &answer);
+                switch(answer)
+                {
+                case 'red':
+                    system("cls");
+                    printf("Welcome to the Realm, Neo...\n");
+                    break;
+                case 'blue':
+                    system("cls");
+                    printf("You're Paul Anderson. That is it.\n");
+                    break;
+                default:
+                    system("cls");
+                    printf("ERROR!\n");
+                }
                 break;
             default:
-                system("cls");
-                printf("Agents got you...\n");
+                printf("ERROR!\n");
             }
             break;
         case 'n':
             system("cls");
-            printf("Strange people took you to their office, and asked about your secret life of hacker, about Morpheus.\n");
-            printf("They grabbed you and did something, then you fall asleep.\n");
-            printf("You waked up back in your apartments.\n");
-            printf("Strange figure in the street seems to be watching you. Looks like you know her...\n");
-            printf("But you totally don't want to check it...\n");
+            printf("Maybe you're right and it's easier to live simple stressless life\n");
+            printf("See you next life, Neo...\n");
             break;
         default:
             system("cls");
-            printf("Agents got you...\n");
+            printf("ERROR!\n");
         }
-
-        return 0;
+        break;
+    case 'n':
+        system("cls");
+        printf("You woke up in the morning with no idea of what had happened yesterday\n");
+        break;
+    default:
+        system("cls");
+        printf("ERROR!\n");
     }
+
+    return 0;
+}
