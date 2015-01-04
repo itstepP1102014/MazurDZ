@@ -4,17 +4,17 @@
 int main()
 {
     char answer;
-    for(int i = 0; i < 2000; ++i)
+    for(int i = 0; i < 1500; ++i)
     {
         printf("Wake up, Neo...\r");
     }
     system("cls");
-    for(int j = 0; j < 2000; ++j)
+    for(int j = 0; j < 1500; ++j)
     {
         printf("The Matrix have you...\r");
     }
     system("cls");
-    for(int k = 0; k < 2000; ++k)
+    for(int k = 0; k < 1500; ++k)
     {
         printf("I was looking for you, Neo...\r");
     }
@@ -61,15 +61,15 @@ int main()
                 printf("In the evening the stranger took you to the hood apartments\n");
                 printf("Finally, you met the Morpheus.\n");
                 printf("After the story of the original world and your destination he giving you two pils: red and blue.\n");
-                printf("red/blue\n");
+                printf("r/b\n");
                 scanf("%c", &answer);
                 switch(answer)
                 {
-                case 'red':
+                case 'r':
                     system("cls");
                     printf("Welcome to the Realm, Neo...\n");
                     break;
-                case 'blue':
+                case 'b':
                     system("cls");
                     printf("You're Paul Anderson. That is it.\n");
                     break;
