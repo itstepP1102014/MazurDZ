@@ -20,7 +20,7 @@ int main()
     }
     system("cls");
     printf("Now you have to do something to meet me, are you ready?\n""y/n\n");
-    scanf("%c", &answer);
+    scanf("% c", &answer);
     switch(answer)
     {
     case 'y':
@@ -35,7 +35,7 @@ int main()
         printf("Suspiciously familiar voice telling you're in great danger.\n");
         printf("Will you follow it's advices?\n");
         printf("y/n\n");
-        scanf("%c", &answer);
+        scanf("%.c", &answer);
         switch(answer)
         {
         case 'y':
@@ -44,7 +44,7 @@ int main()
             printf("There is a hanging stage behind the window\n");
             printf("Step by step you moving to the stage\n");
             printf("You're too scared. Will you make the final step on the stage?\ny/n\n");
-            scanf("%c", &answer);
+            scanf("%.c", &answer);
             switch(answer)
             {
             case 'y':
@@ -62,7 +62,7 @@ int main()
                 printf("Finally, you met the Morpheus.\n");
                 printf("After the story of the original world and your destination he giving you two pils: red and blue.\n");
                 printf("r/b\n");
-                scanf("%c", &answer);
+                scanf("%.c", &answer);
                 switch(answer)
                 {
                 case 'r':
