@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 
 int main()
 {
-    char character, r, c, chh;
+    char character, r, c;
     int sp;
     printf("Enter character:\n");
     scanf("%c", &character);
@@ -44,6 +44,6 @@ int main()
         }
         printf("\n");
     }
-    getch();
+
     return 0;
 }
