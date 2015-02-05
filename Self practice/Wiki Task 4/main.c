@@ -12,22 +12,21 @@ int main()
         {
             a++;
         }
-        else(parenthesisCheck = ')' && --a < 0)
+        else(parenthesisCheck = ')' && --a < 0);
 
-        {
-            break;
-        }
+        break;
+
     }
-    while(parenthesisCheck != '\n')
+    while(parenthesisCheck != '\n');
+
+    if(a == 0)
     {
-        if(a == 0)
-        {
-            printf("This is right order\n");
-        }
-        else
-        {
-            printf("This is wrong order\n");
-        }
+        printf("This is right order\n");
     }
+    else
+    {
+        printf("This is wrong order\n");
+    }
+
     return 0;
 }
