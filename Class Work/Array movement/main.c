@@ -13,21 +13,25 @@ void shift(int a[SIZE][SIZE], int k, int row, int column)
     {
         //перенести все элементы последнего столбца в временный массив
 
-        int temp[SIZE];//
-        for(int j = 0; j < column; j++)
+        int temp[SIZE];
+        for(int j = 0; j < row; j++)
         {
             temp[j] = a[j][row - 1];
         }
-        for(int x = row - 1; x > 0; --x)
-        {
-            for(int y = column - 1; y > 0; --y)
-            {
-                a[y] = a[y - 1];
-            }
 
-            a[x] = a[x - 1];
+        for(int y = column - 1; y >=0; --y)
+        {
+            for(int x = row - 1; x >=0; --x)
+            {
+                a[x][y]=a[x][y-1];
+            }
         }
 
+
+        for(int j = 0; j < row; j++)
+        {
+            a[j][0]=temp[j];
+        }
     }
 }
 
@@ -46,4 +50,19 @@ int main()
         }
         printf("\n");
     }
+
+    printf("\n");
+
+    shift(a,6,row, column);
+
+
+    for(i = 0; i < row; ++i)
+    {
+        for(j = 0; j < column; ++j)
+        {
+            printf("%d\t", a[i][j]);
+        }
+        printf("\n");
+    }
+
 }
