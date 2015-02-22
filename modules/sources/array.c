@@ -3,7 +3,7 @@
 #include <assert.h>
 #define SIZE 1000
 
-void outputArrray(const int array[], int size)
+void output_array(const int array[], int size)
 {
     for(int i = 0; i < size; ++i)
     {
@@ -12,7 +12,7 @@ void outputArrray(const int array[], int size)
     printf("\n");
 }
 
-void inputArray(int array[], int size)
+void input_array(int array[], int size)
 {
     for(int i = 0; i < size; ++i)
     {
@@ -21,7 +21,7 @@ void inputArray(int array[], int size)
     }
 }
 
-int arraySearch(int number, const int array[], int size)
+int array_search(int number, const int array[], int size)
 {
     for(int i = 0; i < size; ++i)
     {
@@ -33,33 +33,33 @@ int arraySearch(int number, const int array[], int size)
     return -1;
 }
 
-int minOfArray(const int array[], int sizeOfPart)
+int min_of_array(const int array[], int cell)
 {
-    assert(sizeOfPart > 0 && sizeOfPart <= SIZE);
+    assert(cell > 0 && cell <= SIZE);
     int min = array[0];
-    for(int i = 1; i < sizeOfPart; ++i)
+    for(int i = 1; i < cell; ++i)
     {
         min = array[i] < min? array[i] : min;
     }
     return min;
 }
 
-int maxOfArray(const int array[], int sizeOfPart)
+int max_of_array(const int array[], int cell)
 {
-    assert(sizeOfPart > 0 && sizeOfPart <= SIZE);
+    assert(cell > 0 && cell <= SIZE);
     int max = array[0];
-    for(int i = 1; i < sizeOfPart; ++i)
+    for(int i = 1; i < cell; ++i)
     {
         max = array[i] > max? array[i] : max;
     }
     return max;
 }
 
-void generateRandomNumbersInArray(int array [], int sizeOfPart)
+void generate_random_numbers_in_array(int array [], int cell)
 {
     srand(time(NULL));
-    assert(sizeOfPart > 0 && sizeOfPart <= SIZE);
-    for(int i = 0; i < sizeOfPart; ++i)
+    assert(cell > 0 && cell <= SIZE);
+    for(int i = 0; i < cell; ++i)
     {
         array[i] = rand()% 10;
     }
