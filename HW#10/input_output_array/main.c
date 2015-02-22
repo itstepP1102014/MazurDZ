@@ -26,7 +26,7 @@ int main()
     }
     for(i = 0; i < SIZE; ++i)
     {
-        printf("%d\n", array[i]);
+        printf("%d\t", array[i]);
     }
 
     return 0;
