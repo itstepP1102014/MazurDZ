@@ -1,5 +1,4 @@
-#include <assert.h>
-#include "/../../../../modules/include/array.h"
+#include "../../modules/include/array.h"
 
 void generate_or_input(int array[], int cell)
 {
@@ -8,14 +7,19 @@ void generate_or_input(int array[], int cell)
     printf("Would you like to generate numbers n array?\n"
            "y/n\n");
     scanf("%c", &answer);
-    assert(answer == 'y' || answer 'n');
-    switch(answer)
+    if(answer != 'y' && answer != 'n')
     {
-    case 'y':
-        generate_random_numbers_in_array(array[], cell);
-        break;
-    case 'n':
-        input_array(array[], cell);
-        break;
+        printf("ERROR!\n");
     }
+    else if(answer == 'y')
+    {
+        generate_random_numbers_in_array(array[], cell);
+    }
+    else(answer == 'n')
+    {
+        input_array(array[], cell);
+    }
+
+    return 0;
+
 }
