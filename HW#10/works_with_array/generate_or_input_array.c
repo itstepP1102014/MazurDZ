@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 const int size = 10;
-void generate_or_input(const int size, int arr[size], int cell)
+void generate_or_input(const int size, int array[size])
 {
 
-    int arr[size], i;
+    int array[size], i;
     char answer;
 
     srand(time(NULL));
@@ -15,19 +15,17 @@ void generate_or_input(const int size, int arr[size], int cell)
     {
         for(i = 0; i < size; ++i);
         {
-            arr[i] = rand() % 100;
-            printf("%d", arr[i]);
+            array[i] = rand() % 100;
         }
-        printf("\n");
     }
     if(answer == 'n')
     {
         for(i = 0; i < size; ++i)
         {
             printf("Input %d element:\n", i);
-            scanf("%d", &arr[i]);
+            scanf("%d", &array[i]);
         }
-        printf("%d\n", arr[i]);
     }
+    printf("%d\n", array[i]);
 
 }
