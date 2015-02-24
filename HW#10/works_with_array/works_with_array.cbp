@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="generate_or_input_array.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="generate_or_input_array.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
