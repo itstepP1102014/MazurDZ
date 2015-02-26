@@ -2,18 +2,26 @@
 
 int factorial(int temp)
 {
-    int result = 1;
-    for(; temp > 0; --temp);
+    if(temp == 0)
     {
-        result *= temp;
+        return 1;
     }
-
-    return result;
+    else
+    {
+        return temp * factorial(temp - 1);
+    }
 }
 int main()
 {
     int n;
-    while( scanf("%d", &n) == 1)
+    printf("Input your number:\n");
+
+    while(n < 0)
+    {
+        printf("ERROR!\n");
+    }
+
+    if(scanf("%d", &n) >= 0)
     {
         printf("%d\n", factorial(n));
     }
