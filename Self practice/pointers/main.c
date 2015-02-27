@@ -10,8 +10,8 @@ void swap(int *x, int *y)
 int main()
 {
     int a = 5, b = 15;
-    swap(a, b);
-    printf("%d %d", a, b);
+    swap(&a, &b);
+    printf("%d %d", &a, &b);
 
     return 0;
 }
