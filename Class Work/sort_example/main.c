@@ -6,7 +6,7 @@
 void output_array(const int *a, int n);
 void generate_array(int *a, int n, int up, int down);
 
-void bubble_sort(int *a, int *n, bool (*less)(int, int));
+void bubble_sort(int *a, int n, bool (*less)(int, int));
 int sum_of_digit(int a)
 {
     a = a> 0? a : -a;
@@ -62,9 +62,9 @@ void swap(int *a, int *b)
     *b = temp;
 }
 
-void bubble_sort(int *a, int *n, bool (*less)(int, int))
+void bubble_sort(int *a, int n, bool (*less)(int, int))
 {
-    for(int i = 0; i < n; ++i)
+    for(int i = 1; i < n; ++i)
     {
         for(int j = 0; j < n -i; ++j)
         {
