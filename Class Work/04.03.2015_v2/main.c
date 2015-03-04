@@ -3,8 +3,8 @@
 
 int main()
 {
-    long long int a = 0xFEFEFEFEFEFEFEFE;
-    char str[8] = "mamarama";
+    long long int a = 0xFEFEFEFEFEFEFEFE; // 8 байт
+    char str[9] = "mama\n123"; // +1 к количеству символов в строчке; любые символы
     long long int b = 0xDADADADADADADADA;
 
     printf("%s\n", str);
