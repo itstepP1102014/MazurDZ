@@ -14,9 +14,9 @@ int output_number(int n)
 
 int main()
 {
-    int n = 103;
+    int n;
 
-    for(; n > 102 && n <987; ++n)
+    for(n = 103; n > 102 && n <987; ++n)
     {
         output_number(n);
     }
